@@ -22,3 +22,9 @@ var myInterpreter = new Interpreter('2 * 2');
 import Interpreter from 'js-interpreter';
 const myInterpreter = new Interpreter('2 * 2');
 ```
+
+## Using command line interface
+
+```
+js-interpreter path/to/my/file.js
+```
