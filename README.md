@@ -54,5 +54,7 @@ git submodule foreach git pull origin master
 
 - Check all the commits on the origin to identify the changes and update `CHANGELOG.md`
 - Bump the version according to semver rules
-- After PR is merged, run `npm publish` to publish the package
-- Push the version as a tag to Github
+- After PR is merged:
+  - Run `npm install` to install the dependencies
+  - Run `npm publish` to publish the package
+  - Push the version as a tag to Github
