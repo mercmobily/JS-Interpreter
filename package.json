@@ -24,13 +24,13 @@
   },
   "homepage": "https://github.com/aminmarashi/JS-Interpreter#readme",
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.0",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
   },
   "dependencies": {
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.5"
   }
 }
