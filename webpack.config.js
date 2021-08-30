@@ -11,7 +11,18 @@ function interpreterConfig(
         entry : path.resolve(__dirname, 'src', 'js-interpreter.js'),
         output: {
             filename,
-            globalObject : 'this',
+            globalObject : (() => {
+            // To support different environments
+            if (typeof self !== 'undefined') {
+                return "self";
+            } else if (typeof window !== 'undefined') {
+                return "window";
+            } else if (typeof global !== 'undefined') {
+                return "global";
+            } else {
+                return 'this';
+            }
+        })(),
             library      : 'JSInterpreter',
             libraryExport: 'default',
             libraryTarget: 'umd',
